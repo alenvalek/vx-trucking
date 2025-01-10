@@ -231,7 +231,7 @@ local function HandleResourceStop(resourceName)
     if mission.trailer and DoesEntityExist(mission.trailer) then DeleteEntity(mission.trailer) end
 end
 
-AddEventHandler('playerConnecting', HandleResourceStart)
+AddEventHandler('onClientResourceStart', HandleResourceStart)
 AddEventHandler('onResourceStop', HandleResourceStop)
 RegisterNetEvent('vx_trucking:client:interact_take_job', InteractTakeJob)
 RegisterNetEvent('vx_trucking:client:interact_rent_menu', InteractRentMenu)
