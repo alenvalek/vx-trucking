@@ -223,7 +223,6 @@ end
 
 local function HandleResourceStart(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
-
     InitializeJob()
 end
 
@@ -232,8 +231,8 @@ local function HandleResourceStop(resourceName)
     if mission.trailer and DoesEntityExist(mission.trailer) then DeleteEntity(mission.trailer) end
 end
 
+AddEventHandler('playerConnecting', HandleResourceStart)
 AddEventHandler('onResourceStop', HandleResourceStop)
-AddEventHandler('onResourceStart', HandleResourceStart)
 RegisterNetEvent('vx_trucking:client:interact_take_job', InteractTakeJob)
 RegisterNetEvent('vx_trucking:client:interact_rent_menu', InteractRentMenu)
 RegisterNetEvent('vx_trucking:client:interact_jobs_menu', InteractJobsMenu)
