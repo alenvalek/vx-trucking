@@ -3,8 +3,8 @@ return {
     JobLocations = {
         ['docks'] = {
             Trucks = {
-                { startCost = 150, model = 'hauler' },
-                { startCost = 0,   model = 'phantom' }
+                { startCost = 300, model = 'hauler' },
+                { startCost = 500, model = 'phantom' }
             },
             Trailers = {
                 { model = 'trailers' },
@@ -23,10 +23,10 @@ return {
             Jobs = {
                 ["oil_01"] = { name = "Oil delivery", reward = 1000, position = vec4(2588.521, 414.855, 108.457, 181.234), trailerType = "tanker2" },
                 ["wood_01"] = { name = "Wood delivery", reward = 1500, position = vec4(-65.248, 1905.083, 196.002, 188.290), trailerType = "trailerlogs" },
-                ["metal_01"] = { name = "Metal delivery", reward = 2000, position = vec4(2675.063, 1431.447, 24.501, 268.169), trailerType = "trailers2" },
-                ["goods_01"] = { name = "Goods delivery", reward = 2500, position = vec4(720.875, -984.858, 24.156, 274.363), trailerType = "trailers3" },
-                ["goods_02"] = { name = "Goods delivery 2", reward = 2500, position = vec4(-2310.149, 265.014, 169.602, 22.005), trailerType = "trailers3" },
-                ["goods_03"] = { name = "Goods delivery 3", reward = 2500, position = vec4(-2310.149, 265.014, 169.602, 22.005), trailerType = "trailers3" }
+                ["metal_01"] = { name = "Metal delivery", reward = 3000, position = vec4(2675.063, 1431.447, 24.501, 268.169), trailerType = "trailers2" },
+                ["goods_01"] = { name = "Goods delivery", reward = 4500, position = vec4(720.875, -984.858, 24.156, 274.363), trailerType = "trailers3" },
+                ["goods_02"] = { name = "Goods delivery 2", reward = 4500, position = vec4(-2310.149, 265.014, 169.602, 22.005), trailerType = "trailers3" },
+                ["goods_03"] = { name = "Goods delivery 3", reward = 5000, position = vec4(-2310.149, 265.014, 169.602, 22.005), trailerType = "trailers3" }
             },
             VehicleParkingSpots = {
                 vec4(144.677, -3210.092, 6.090, 270.0),
